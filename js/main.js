@@ -18,12 +18,12 @@ var app = new Vue ({
     },
     methods: {
         // Adds Product to cart
-        addToCart: function (_id) {
+           addToCart: function (_id) {
             const itemIndex = this.cart.findIndex(item => item._id === _id);
             if (itemIndex != -1) {
                 this.cart[itemIndex].availablespace += 1;
             } else {
-                this.cart.push({ _id: _id, availablespace: 1 });
+                this.cart.push({ _id: _id, availablespace:  1 });
             }
         },
         addLessonToCart: function (_id) {
