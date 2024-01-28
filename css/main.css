@@ -1,0 +1,96 @@
+@font-face {
+    font-family:"Product-Sans";
+    src: url("../fonts/ProductSans-Bold.ttf") format("truetype");
+}
+
+.cart-button{
+    float: right;
+	margin-right: 35px;
+    padding: 10px 15px;
+    background-color: #FFBBAB;
+    color: #A54C38;
+    font-family: Product-Sans;
+}
+
+.add_to_card-btn{
+	margin-right: 35px;
+    padding: 10px 15px;
+    background-color: #FFBBAB;
+    color: #A54C38;
+    font-family: Product-Sans;
+}
+
+.add_to_card-btn:hover{
+    background-color: #FFD3C8;
+	border: 2px solid #4A0102;
+    color: #4A0100;
+	outline: none;
+}
+
+.cart-button:hover{
+    background-color: #FFD3C8;
+	border: 2px solid #4A0102;
+    color: #4A0100;
+	outline: none;
+}
+
+
+.cart-button:active{
+    float: right;
+	margin-right: 35px;
+    background-color: #FFBBAB;
+    color: #A54C38;
+}
+
+.logo{
+	color: #A54C38;
+	font-family: Product-Sans;
+}
+input[type=text]:focus {
+    background-color:#FFF4F5;
+    border: 3px solid #A54C38 !important;
+    text-decoration: none !important;
+    outline-width: 0;
+}
+.search_form{
+    color: #4A0100 !important;
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 0px solid #A54C38 !important;
+    background-color:#FFF4F5;
+    font-family: Product-Sans;
+  }
+
+  ::placeholder {
+    color: #4A0100;
+  }
+a{
+	color: #F4B6B0;
+}
+a:hover{
+	color: #FC641D;
+	text-decoration: none;
+}
+#star{
+	color: orange;
+}
+.custom-control-input:checked~.custom-control-label::before{
+	background-color: #FC641D;
+	border-color: #FC641D;
+}
+.nav_view{
+    background-color:#FFDCC7;
+}
+.nav_view h3{
+    color:#422100;
+}
+
+.jumbotron{
+	background-color: #ffffff;
+	margin-bottom: 0;
+}
+.breadcrumb{
+	padding-left: 12.6rem;
+}
