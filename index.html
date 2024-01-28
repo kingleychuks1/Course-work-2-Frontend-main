@@ -34,7 +34,7 @@
 
                   <div class="col">
                     	<!-- Hides and shows the cart depending on whether or not it is empty -->
-						<button class="cart-button btn" v-if="cartItemCount === ''" hidden><i class="fa fa-shopping-cart"></i> Cart {{cartItemCount}}</button>
+						<button class="cart-button btn" v-if="cartItemCount === ''" disabled><i class="fa fa-shopping-cart"></i> Cart {{cartItemCount}}</button>
 
 						<button class="cart-button btn" v-on:click="showShoppingCartPage()" v-else><i class="fa fa-shopping-cart"></i> Cart {{cartItemCount}} </button>
 						<!-- End of Hides and shows the cart depending on whether or not it is empty -->
