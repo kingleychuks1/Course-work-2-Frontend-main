@@ -33,11 +33,11 @@
                   </div>
 
                   <div class="col">
-                    	<!-- Hides and shows the cart depending on whether or not it is empty -->
+                    	<!-- Shows as disabled when the cart is empty and active when the cart has an item inside -->
 						<button class="cart-button btn" v-if="cartItemCount === ''" disabled><i class="fa fa-shopping-cart"></i> Cart {{cartItemCount}}</button>
 
 						<button class="cart-button btn" v-on:click="showShoppingCartPage()" v-else><i class="fa fa-shopping-cart"></i> Cart {{cartItemCount}} </button>
-						<!-- End of Hides and shows the cart depending on whether or not it is empty -->
+						<!-- End of Shows as disabled when the cart is empty and active when the cart has an item inside -->
                   </div>
             </div>
 
@@ -145,7 +145,7 @@
                 <div class="col">
                   <input type="text" class="form-control" v-model="user.phone" placeholder="Phone Number" required>
                 </div>
-                <input style="margin-bottom: 50px;" v-on:click="checkOut()" v-if="user.name == '' || user.number == '' " class="btn btn-primary" type="submit" value="Place Order" hidden>
+                <input style="margin-bottom: 50px;" v-on:click="checkOut()" v-if="user.name == '' || user.number == '' " class="btn btn-primary" type="submit" value="Place Order" disabled>
                 <p v-else-if="user.name == parseInt(user.name) " class="bg-danger"> Please input a valid name</p>
                 <input style="margin-bottom: 50px;" v-on:click="checkOut()" v-else class="btn add_to_card-btn" type="submit" value="Place Order"> 
               </div>
