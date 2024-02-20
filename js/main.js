@@ -187,7 +187,7 @@ var app = new Vue ({
             
     },
     created() {
-        fetch("https://coursework-env.eba-qzgh8hw3.eu-west-2.elasticbeanstalk.com/collection/products")
+        fetch("https://cw2-backend.onrender.com/collection/products")
         .then(response => response.json())
         .then(data => (this.lessons = data));
       }
