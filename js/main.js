@@ -81,7 +81,7 @@ var app = new Vue ({
             alert('Cheers '+ user.name + ' ,your order has been successfully submitted');   
         },
         checkOut: function () {
-            fetch('http://coursework-env.eba-qzgh8hw3.eu-west-2.elasticbeanstalk.com/collection/products/order', {
+            fetch('https://cw2-backend.onrender.com/collection/products/order', {
                 method: 'POST', // set the HTTP method as 'POST'
                 headers: {
                     'Content-Type': 'application/json', // set the data type as JSON
@@ -95,7 +95,7 @@ var app = new Vue ({
 
             for (let index = 0; index < this.cart.length; index++) {
                 const lesson = this.fetchLesson(this.cart[index].lessonID);
-                fetch(`http://coursework-env.eba-qzgh8hw3.eu-west-2.elasticbeanstalk.com/collection/products${lesson._id}`, {
+                fetch(`https://cw2-backend.onrender.com/collection/products${lesson._id}`, {
                     method: 'PUT', // set the HTTP method as 'POST'
                     headers: {
                         'Content-Type': 'application/json', // set the data type as JSON
@@ -187,7 +187,7 @@ var app = new Vue ({
             
     },
     created() {
-        fetch("http://coursework-env.eba-qzgh8hw3.eu-west-2.elasticbeanstalk.com/collection/products")
+        fetch("https://coursework-env.eba-qzgh8hw3.eu-west-2.elasticbeanstalk.com/collection/products")
         .then(response => response.json())
         .then(data => (this.lessons = data));
       }
