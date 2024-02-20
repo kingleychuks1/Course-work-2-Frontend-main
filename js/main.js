@@ -81,7 +81,7 @@ var app = new Vue ({
             alert('Cheers '+ user.name + ' ,your order has been successfully submitted');   
         },
         checkOut: function () {
-            fetch('https://kingleychuks1.github.io/Course-work-2-Frontend-main/', {
+            fetch('http://coursework-env.eba-qzgh8hw3.eu-west-2.elasticbeanstalk.com/collection/products/order', {
                 method: 'POST', // set the HTTP method as 'POST'
                 headers: {
                     'Content-Type': 'application/json', // set the data type as JSON
@@ -187,7 +187,7 @@ var app = new Vue ({
             
     },
     created() {
-        fetch("https://kingleychuks1.github.io/Course-work-2-Frontend-main/")
+        fetch("http://coursework-env.eba-qzgh8hw3.eu-west-2.elasticbeanstalk.com/collection/products")
         .then(response => response.json())
         .then(data => (this.lessons = data));
       }
