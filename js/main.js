@@ -81,7 +81,7 @@ var app = new Vue ({
             alert('Cheers '+ user.name + ' ,your order has been successfully submitted');   
         },
         checkOut: function () {
-            fetch('https://cw2-backend.onrender.com/collection/products/order', {
+            fetch('https://cw2-backend.onrender.com/collection/order', {
                 method: 'POST', // set the HTTP method as 'POST'
                 headers: {
                     'Content-Type': 'application/json', // set the data type as JSON
